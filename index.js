@@ -8,10 +8,9 @@ class Circle {
         return this.radius * 2
 
     }
-    set diameter(newRadius){
-        this.newradius = this.newRadius * 2
-        
-    }
+    set diameter( diameter ) {
+        this.radius = diameter / 2
+      }
 
     get circumference(){
 
@@ -20,7 +19,7 @@ class Circle {
     }
     set circumference(newCirc){
         // console.log(newCirc)
-        Math.PI * (this.newCirc ** 2)
+       this.diameter = newCirc / Math.PI
         
     }
 
